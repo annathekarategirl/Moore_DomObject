@@ -14,3 +14,4 @@ l2.textContent="two"
 const l3=document.createElement("li")
 l3.textContent="three"
 ul.append(l1,l2,l3)
+h1.classList.add("highlight")
