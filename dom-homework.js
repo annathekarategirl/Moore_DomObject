@@ -18,4 +18,6 @@ h1.classList.add("highlight") //googled this function
 const heading=document.querySelector(".highlight")
 heading.style.backgroundColor="red"
 const button=document.createElement("button")
+button.textContent='Add new list item'
 button.addEventListener("click",function(){var li=document.createElement("li");ul.append(li)})
+document.body.append(button)
