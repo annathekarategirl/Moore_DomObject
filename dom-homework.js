@@ -31,3 +31,4 @@ function getRandomColor(){
 let c ="rgb(123,123,123)"
 button.addEventListener("click",function(){var li=document.createElement("li");li.textContent="New list item "+x;x++;li.style.color=getRandomColor();ul.append(li);})
 document.body.append(button)
+myDiv.addEventListener("click",function(){myDiv.style.backgroundColor=getRandomColor()})
