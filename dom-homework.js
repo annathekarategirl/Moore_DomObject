@@ -14,4 +14,8 @@ l2.textContent="two"
 const l3=document.createElement("li")
 l3.textContent="three"
 ul.append(l1,l2,l3)
-h1.classList.add("highlight")
+h1.classList.add("highlight") //googled this function
+const heading=document.querySelector(".highlight")
+heading.style.backgroundColor="red"
+const button=document.createElement("button")
+button.addEventListener("click",function(){var li=document.createElement("li");ul.append(li)})
