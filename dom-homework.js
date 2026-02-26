@@ -27,7 +27,7 @@ function getRandomColor(){
     var b=Math.random()*256;
     return "rgb("+r+","+g+","+b+")"
     
-}
+}//learned from Mr. Justice
 let c ="rgb(123,123,123)"
-button.addEventListener("click",function(){var li=document.createElement("li");li.textContent="New list item "+x;x++;ul.append(li);})
+button.addEventListener("click",function(){var li=document.createElement("li");li.textContent="New list item "+x;x++;li.style.backgroundColor=getRandomColor();ul.append(li);})
 document.body.append(button)
