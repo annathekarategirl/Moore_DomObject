@@ -19,5 +19,15 @@ const heading=document.querySelector(".highlight")
 heading.style.backgroundColor="red"
 const button=document.createElement("button")
 button.textContent='Add new list item'
-button.addEventListener("click",function(){var li=document.createElement("li");ul.append(li)})
+var x=4
+function getRandomColor(){
+
+    var r=Math.random()*256;
+    var g=Math.random()*256
+    var b=Math.random()*256;
+    return "rgb("+r+","+g+","+b+")"
+    
+}
+let c ="rgb(123,123,123)"
+button.addEventListener("click",function(){var li=document.createElement("li");li.textContent="New list item "+x;x++;ul.append(li);})
 document.body.append(button)
